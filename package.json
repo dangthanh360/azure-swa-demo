@@ -1,11 +1,17 @@
 {
   "name": "vanilla-basic",
   "version": "1.0.0",
-  "scripts": { 
+  "scripts": {
     "start": "sirv ./src public --cors --single --no-clear --port 8000",
-    "playwright_test" : "playwright test"
+    "playwright_test": "playwright test",
+    "swa-start": "npx swa start src --api-location api",
+    "swa-run": "npx swa start src"
   },
   "devDependencies": {
     "@playwright/test": "^1.22.2"
+  },
+  "dependencies": {
+    "@azure/static-web-apps-cli": "^1.0.3",
+    "azure-functions-core-tools": "^4.0.4829"
   }
 }
